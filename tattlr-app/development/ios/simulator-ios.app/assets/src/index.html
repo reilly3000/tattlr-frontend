@@ -25,18 +25,22 @@
 		</select>
 
 		<!-- <div id="photo-container"></div>-->
-<a href="#form" data-role="button" id="upload-photo" data-theme="b" data-icon="star" data-iconpos="right">Tattle!</a>
+<a href="#form" data-role="button"  data-theme="b" data-icon="star" data-iconpos="right">Tattle!</a>
 </div>
 </div>
 
 <div data-role="page" id="form">
 <img src="img/header-nobkg.png" />
 <form action="http://tattlr-spocode.rhcloud.com/tattl" method="post" enctype="multipart/form-data">
+<label>Pick a photo</label>
+<input id="upload-photo" type="file"/>
 <label>Which City?</lable>
 		<select name="city" id="city">
    			<option value="spokane">Spokane</option>
 		</select>
-<br /><label>What is the problem?</lable>
+				<br />
+
+<label>What is the problem?</label>
 
 		<select name="problem" id="problem">
    			<option value="pothole">Pothole</option>
